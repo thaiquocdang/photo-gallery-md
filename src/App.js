@@ -9,10 +9,10 @@ function App() {
   const [selectedImg, setSelectedImg] = useState(null)
 
   return (
-    <div className="App">
+    <div>
       <Title />
       <UploadForm />
-      <Image setSelectedImg={setSelectedImg}/>
+       <Image setSelectedImg={setSelectedImg}/>
       {selectedImg && <LargeImage selectedImg={ selectedImg } setSelectedImg={ setSelectedImg } />}
     </div>
   );
